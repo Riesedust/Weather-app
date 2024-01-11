@@ -15,7 +15,7 @@ function App() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    const apiURL = `https://api.weatherapi.com/v1/forecast.json?key=2fc2b8af08884e2098a125135231912&q=${newCity}&days=3&aqi=no&alerts=no
+    const apiURL = `https://api.weatherapi.com/v1/forecast.json?key=${process.env.REACT_APP_APIKEY}&q=${newCity}&days=3&aqi=no&alerts=no
       `;
     fetch(apiURL)
       .then((res) => res.json())
