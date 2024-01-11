@@ -42,7 +42,6 @@ function App() {
     setCityHour(citys[0].forecast.forecastday[0].hour);
     setCityDays(citys[0].forecast.forecastday);
     isDay = citys[0].current.is_day;
-    console.log(isDay);
   }
 
   function cambiarColorNav(city) {

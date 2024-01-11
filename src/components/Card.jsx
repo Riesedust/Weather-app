@@ -1,8 +1,8 @@
 import React from "react";
 
 function Card({ city }) {
-  var tempMin, tempMax;
-  var fecha = new Date().toLocaleDateString("en-us", {
+  let tempMin, tempMax;
+  let fecha = new Date().toLocaleDateString("en-us", {
     weekday: "long",
     month: "long",
     day: "numeric",

@@ -47,6 +47,7 @@ function CardHour({ city, isDay }) {
                       : handleStyle("bg-gray-900")
                   }
                 >
+                  <p>{hora(e.time)}</p>
                   <img
                     className="m-auto"
                     alt={e.condition.text}
@@ -54,7 +55,6 @@ function CardHour({ city, isDay }) {
                   ></img>
                   <p>{e.condition.text}</p>
                   <p>{Math.round(e.temp_c)} C°</p>
-                  <p>{hora(e.time)}</p>
                 </div>
               </div>
             );
