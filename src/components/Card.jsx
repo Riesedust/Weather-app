@@ -1,5 +1,4 @@
 import React from "react";
-
 function Card({ city }) {
   let tempMin, tempMax;
   let fecha = new Date().toLocaleDateString("en-us", {
@@ -7,6 +6,7 @@ function Card({ city }) {
     month: "long",
     day: "numeric",
   });
+  let algo
   return (
     <>
       {Array.isArray(city) &&

@@ -12,6 +12,7 @@ function App() {
   const [cityHour, setCityHour] = useState([]);
   const [cityDays, setCityDays] = useState([]);
   const [newCity, setNewCity] = useState("");
+  const prueba=1
 
   function handleSubmit(e) {
     e.preventDefault();
